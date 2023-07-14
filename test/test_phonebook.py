@@ -43,7 +43,7 @@ class TestPhonebook:
     def test_nome_invalido_dolar(self):  # teste com $
         resultado_esperado = "Nome invalido"
         phonebook = Phonebook()
-        resultado = phonebook.adicionar_contato('$', '126712724')  # Corrigido: troquei '!' por '$'
+        resultado = phonebook.adicionar_contato('$', '126712724')
         assert resultado_esperado == resultado
 
     def test_nome_invalido_percent(self):  # teste com %
